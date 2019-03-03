@@ -309,6 +309,30 @@ public class SinglyLinkedList {
         return r;
     }
 
+    public static class Node {
+
+        public int data;
+
+        public Node next;
+
+        public Node(){
+
+        }
+
+        public Node(int data){
+            this.data = data;
+        }
+
+        public Node(int data, Node next){
+            this.data = data;
+            this.next = next;
+        }
+
+        public int getData() {
+            return data;
+        }
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList link = new SinglyLinkedList();
         System.out.println("hello");

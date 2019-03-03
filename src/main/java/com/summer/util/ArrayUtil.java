@@ -1,6 +1,5 @@
 package com.summer.util;
 
-import java.util.Random;
 
 public class ArrayUtil {
 
