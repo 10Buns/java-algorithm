@@ -1,4 +1,4 @@
-package com.summer.geekalgo.linkedlist06;
+package com.summer.geekalgo.linkedlist07;
 
 /**
  * @Version V1.0
@@ -40,13 +40,13 @@ public class ReverseLinkedList {
 
         Node prev = null;
         Node next = null;
-        while (head.next != null){
+        while (head.getNext() != null){
             next = head.getNext();
-            head.next = prev;
+            head.setNext(prev);
             prev = head;
             head = next;
         }
-        head.next = prev;
+        head.setNext(prev);
         return head;
     }
 
@@ -59,8 +59,8 @@ public class ReverseLinkedList {
         Node head = new Node(0, null);
         Node cur = head;
         for(int i=1; i<num;i++){
-            cur.next = new Node(i, null);
-            cur = cur.next;
+            cur.setNext(new Node(i, null));
+            cur = cur.getNext();
         }
         return head;
     }
@@ -76,41 +76,6 @@ public class ReverseLinkedList {
             node = node.getNext();
         }
         System.out.print("null");
-    }
-
-    public static class Node{
-
-        private int data;
-        private Node next;
-
-        public Node(){
-            this.next = null;
-        }
-
-        public Node(int data){
-            this.data = data;
-        }
-
-        public Node(int data, Node next){
-            this.data = data;
-            this.next = next;
-        }
-
-        public int getData() {
-            return data;
-        }
-
-        public void setData(int data) {
-            this.data = data;
-        }
-
-        public void setNext(Node next) {
-            this.next = next;
-        }
-
-        public Node getNext() {
-            return next;
-        }
     }
 
     public static void main(String[] args) {
