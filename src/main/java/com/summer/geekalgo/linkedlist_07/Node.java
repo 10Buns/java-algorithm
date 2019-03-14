@@ -1,4 +1,4 @@
-package com.summer.geekalgo.linkedlist07;
+package com.summer.geekalgo.linkedlist_07;
 
 /**
  * @Version V1.0

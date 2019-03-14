@@ -1,4 +1,4 @@
-package com.summer.geekalgo.stack08;
+package com.summer.geekalgo.stack_08;
 
 /**
  * @Version V1.0

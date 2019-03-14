@@ -1,4 +1,4 @@
-package com.summer.geekalgo.linkedlist06;
+package com.summer.geekalgo.linkedlist_06;
 
 public class SinglyLinkedList {
 
