@@ -40,4 +40,18 @@ public class Node {
     public void setNext(Node next) {
         this.next = next;
     }
+
+
+    /**
+     * 打印链表
+     * @param head
+     */
+    public static void printLinkedList(Node head){
+        Node node = head;
+        while (node != null){
+            System.out.print(node.getData() +"->");
+            node = node.getNext();
+        }
+        System.out.print("null");
+    }
 }

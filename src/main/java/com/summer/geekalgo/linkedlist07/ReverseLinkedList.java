@@ -65,31 +65,18 @@ public class ReverseLinkedList {
         return head;
     }
 
-    /**
-     * 打印链表
-     * @param head
-     */
-    public static void printLinkedList(Node head){
-        Node node = head;
-        while (node != null){
-            System.out.print(node.getData() +"->");
-            node = node.getNext();
-        }
-        System.out.print("null");
-    }
-
     public static void main(String[] args) {
 
         Node head = initLinkedList(10);
 
         System.out.println("原始链表:");
-        printLinkedList(head);
+        Node.printLinkedList(head);
         System.out.println("\n从头反转链表:");
         Node head1 = reverseByHead(head);
-        printLinkedList(head1);
+        Node.printLinkedList(head1);
         System.out.println("\n从尾反转链表:");
         Node head2 = reverseByLast(head1);
-        printLinkedList(head2);
+        Node.printLinkedList(head2);
     }
 
 }
